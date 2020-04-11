@@ -1,4 +1,3 @@
-heroku buildpacks:set heroku/nodejs
 
 var width = $(window).width(); 
 window.onscroll = function(){
@@ -45,13 +44,6 @@ function closemagnify(){
     },800);
 }
 
-setTimeout(function(){
-    $("#loading").addClass("animated fadeOut");
-    setTimeout(function(){
-      $("#loading").removeClass("animated fadeOut");
-      $("#loading").css("display","none");
-    },800);
-},1650);
 
 $(document).ready(function(){
     $("a").on('click', function(event) {
